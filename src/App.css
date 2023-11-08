@@ -1,0 +1,78 @@
+/* App.css */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.game {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Memberikan jarak antara setiap papan permainan */
+.board {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  border: 2px solid #ccc;
+  width: 300px; /* Atur lebar sesuai kebutuhan */
+}
+
+.status {
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.board-row {
+  display: flex;
+}
+
+.square {
+  width: 40px;
+  height: 40px;
+  margin: 3px;
+  font-size: 24px;
+  text-align: center;
+  line-height: 40px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Warna hitam untuk simbol 'X' */
+.square[data-value="X"] {
+  color: #000000; /* Hitam */
+}
+
+/* Warna putih untuk simbol 'O' */
+.square[data-value="O"] {
+  color: #ff0000; /* Putih */
+}
+
+.square:hover {
+  background-color: #f0f0f0;
+}
+
+.restart-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.restart-button:hover {
+  background-color: #45a049;
+}
